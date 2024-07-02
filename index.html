@@ -11,6 +11,11 @@
             padding: 0;
             color: #333;
         }
+        @media (min-width: 900px) {
+    body {
+        width: 50%;
+    }
+}
 
         .navbar {
             background-color: #333;
@@ -41,44 +46,46 @@
             margin-top: 50px; /* Offset for fixed header */
         }
 
-        .background-section {
-            background-image: url('https://via.placeholder.com/1920x1080');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            position: relative;
-            height: 100vh;
-        }
+        #background-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #333; /* Light gray background */
+    scroll-
+}
 
-        .background-section h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em;
-            margin: 0;
-        }
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #fcfffd;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400; 
+    
+}
 
         .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border: 2px solid #333;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 10px 5px 10px 10px rgba(211, 211, 211, 0.8);
-        }
+    position: relative;
+    padding-bottom: 100%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background:antiquewhite;
+}
 
-        .video-wrapper video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
         .password-section input {
             padding: 10px;
             margin: 10px;
@@ -178,18 +185,95 @@
     </div>
 
     <div id="background-section" class="section background-section">
-        <h1>Background Section</h1>
+        <p >DEAR DIMPLE ❤ 
+            I U are becoming old now 🥹
+            
+            To the one whom I love before and still ! 
+            
+            To the one whom I admire !💫
+            
+            To the one whom I never wanna loose !
+            
+            Im telling.....Happy Birthday 🤌
+            
+            to someone who knows me better than I
+            
+             know myself 💖
+            
+            Cheers to another fabulous year of life🥂
+            
+            “Thank you for being the reason I smile.
+            
+            “Birthdays come around every year,
+             
+            but friends like you only come once in a 
+            
+            lifetime.”❤
+            I found a rare piece and that's uh 🫂
+            
+            Ummm....u know how much I love uh !
+            
+            But I love you more than u knows ❤🤌
+            
+            Seems like our journey turned ages in a
+            
+             blink of an eye 👀 but no changes in our
+            
+             love towards each other 🪻
+            
+            I love the sound of people saying dimple ❤
+            
+            Makes me blush and crush on uu 💘 
+            
+            For ever I will be there for uh 🫴 
+            
+            I will never dare to loose uh....I asked God
+            
+             for a rose and he gave me a season....
+            
+             definitely that's ur love ❤‍🩹
+            
+            Tnx's for being by my side whenever I need
+            
+            Well soon I get hurt because of uh !!
+            
+            Because I love u to the fullest 🥺
+            
+            Yes I am damn possessive ❤‍🩹 because 
+            I don't wanna share u with anyone 🤌🫂
+            
+            I don't tolerate u loving others just equal
+            
+             to meh 🥹. Hope u will understand ! 
+            
+            The d - day ! 
+            
+            Clock turns 12:00 am 
+            
+            Calendar turns out a day !
+            
+            The wait is over 👏
+            
+            Now dimple turns 19 ! 
+            
+            🤫 🎂🥂 Happy Birthday Beautiful ❤
+            
+            Happy Birthday babe ❤🥂
+            
+            Cheers to another year to bare me 😊
+            
+            May all these winds and clouds sprinkle
+            
+             love on u forever ❣ ♾</p>
     </div>
 
     <div id="video-section" class="section">
         <h1>Video Section</h1>
         <div class="video-wrapper">
             <video controls>
-                <source src="video.mp4" type="video/mp4">
-                <source src="video.ogg" type="video/ogg">
+                <source src="https://res.cloudinary.com/doumvk0ca/video/upload/v1719934045/VID-20240702-WA0015_rvykxz.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
     </div>
 
     <div id="password-section" class="section password-section">
@@ -217,11 +301,11 @@
             if (password === correctPassword) {
                 result.innerHTML = `
                     <p>Password is correct!</p>
-                    <p>Access granted.</p>
+                    <i>Happy Birthday Dimple!</i>
                     <section>
-                        <h2>Welcome Section</h2>
-                        <p>Welcome to the secure area!</p>
-                        <img src="https://via.placeholder.com/400x300?text=Welcome" alt="Welcome Image">
+                        <h2>Welcome</h2>
+                        
+                        <img src="https://res.cloudinary.com/doumvk0ca/image/upload/fl_preserve_transparency/v1719920071/IMG_20240702_004633_693_prd0ht.jpg?_s=public-apps" alt="Welcome Image">
                     </section>
                 `;
                 result.className = 'result success';
