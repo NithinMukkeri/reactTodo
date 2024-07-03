@@ -11,8 +11,12 @@
             padding: 0;
             color: #333;
         }
+
         @media (min-width: 900px) {
     body {
+        width: 50%;
+    }
+    .navbar{
         width: 50%;
     }
 }
@@ -52,7 +56,8 @@
     justify-content: center;
     height: 100vh; /* Full viewport height */
     background-color: #333; /* Light gray background */
-    scroll-
+    
+overflow: auto;
 }
 
 p {
@@ -65,6 +70,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400; 
+    overflow: auto;
     
 }
 
@@ -159,6 +165,11 @@ p {
             background-color: #333;
             color: white;
             text-align: center;
+            border-radius: 20px;
+        }
+        .footer pre{
+            font-size: 18px;
+    font-style: italic;
         }
 
         img {
@@ -185,11 +196,9 @@ p {
     </div>
 
     <div id="background-section" class="section background-section">
-        <p >DEAR DIMPLE ❤ 
-            I U are becoming old now 🥹
-            
+        <p >DEAR DIMPLE ❤ .....
+            U are becoming old now 🥹
             To the one whom I love before and still ! 
-            
             To the one whom I admire !💫
             
             To the one whom I never wanna loose !
@@ -288,8 +297,12 @@ p {
     </div>
 
     <div id="footer" class="section footer">
-        <h1>Footer Section</h1>
-        <p>This is the footer section with some final text.</p>
+   
+        <pre>Friendship remains 
+    No returns ! 
+  Chary loves dimple ❤
+    #11/7/24 🦋</pre>
+        
     </div>
 
     <script>
@@ -311,11 +324,11 @@ p {
                 result.className = 'result success';
             } else {
                 result.innerHTML = `
-                    <p>Password is incorrect!</p>
+                    
                     <p>Please try again.</p>
                     <section>
-                        <h2>Error Section</h2>
-                        <p>Access denied.</p>
+                        
+                        <p>Access denied. Dimple</p>
                         <img src="https://via.placeholder.com/400x300?text=Error" alt="Error Image">
                     </section>
                 `;
@@ -378,3 +391,4 @@ function clearPasswordSection() {
             document.getElementById('password').value = '';
             document.getElementById('result').innerHTML = '';
         }
+             <!--<h1>Footer Section</h1>--!>
